@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel Survey</title>
+  </head>
+
+  <h1 id="title">Travel Survey</h1>
+  <body>
+    <div id="survey">
+      <p id="description">A short survey to understand trends in travel</p>
+     <form id="survey-form" autocomplete="on">
+      <div class="labels">
+        <label id="name-label" for="name">Name </label>
+       </div>
+      <div class="inputs">
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+      <div class="labels">
+        <label for="email" id="email-label">Email </label>
+       </div>
+      <div class="inputs">
+       <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="labels">
+       <label for="age" id="number-label" name="age">Age</label>
+       </div>
+       <div class="inputs">
+        <input type="number" id="number" name="age" placeholder="Age" min="1" max="120">
+        </div>
+       <div class="labels">
+         <label for="gender">Gender</label>
+       </div>
+       <div class="inputs">
+         <select type="dropdown" id="dropdown" name="gender">
+         <option value="" disabled selected hidden>Select an option</option>
+         <option value="female">Female</option>
+         <option value="male">Male</option>
+         <option value="other">Other/Non-Binary</option>
+         </select>
+       </div>
+       <div class="labels">
+          <label for="freq">How often do you expect to travel in the next 12 months?</label>
+         </div>
+       <div class="inputs">
+        <input type="radio" name="freq" value="0">I will not travel in the next 12 months<br>
+        <input type="radio" name="freq" value="1">1-2 times<br>
+        <input type="radio" name="freq" value="3">3 or more times<br>
+       </div>
+       <div class="labels">
+        <label for="loc">In the next 12 months do you plan on visiting any of these countries? Select all that apply.</label>
+       </div>
+       <div class="inputs">
+         <input type="checkbox" name="loc" value="Iceland">Iceland<br>
+         <input type="checkbox" name="loc" value="Nepal">Nepal<br>
+         <input type="checkbox" name="loc" value="Croatia">Croatia<br>
+         <input type="checkbox" name="loc" value="Thailand">Thailand<br>
+         <input type="checkbox" name="loc" value="Brazil">Brazil<br>
+         <input type="checkbox" name="loc" value="New Zealand">New Zealand<br>
+         <input type="checkbox" name="loc" value="China">China<br>
+         <input type="checkbox" name="loc" value="Costa Rica">Costa Rica<br>
+         <input type="checkbox" name="loc" value="Morocco">Morocco<br>
+       </div>
+       <div class="labels">
+         <label for="comment">What are your reasons for traveling?</label>
+       </div>
+       <div class="inputs">
+         <textarea name="comment" cols="30" rows="4"></textarea>
+       </div>
+       <div >
+         <input type="submit" id="submit" class="submit">
+       </div>
+      </form>
+    </div>
+
+  </body>
+</html>
